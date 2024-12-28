@@ -1,0 +1,23 @@
+/* src/components/SearchBar.module.css */
+.searchBar {
+    display: flex;
+    justify-content: center;  /* Centra el input horizontalmente */
+    align-items: center;      /* Centra el input verticalmente */
+    width: 60%;              /* Ocupa todo el ancho del contenedor */
+  }
+  
+  .searchBar input {
+    width: 50%;               /* Ajusta el ancho del input, por ejemplo, al 50% */
+    height: 20px;             /* Ajusta la altura del input */
+    padding: 10px;            /* Espaciado interno del input */
+    font-size: 16px;          /* Tamaño de la fuente */
+    text-align: center;       /* Centra el texto dentro del input */
+    border: 1px solid #ccc;  /* Borde del input */
+    border-radius: 5px;       /* Bordes redondeados */
+    transition: all 0.3s ease;  /* Transición suave */
+  }
+  
+  .searchBar input:focus {
+    outline: none;           /* Remover el borde por defecto al hacer foco */
+  }
+  

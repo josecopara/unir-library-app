@@ -1,0 +1,32 @@
+/* src/styles/global.css */
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color); /* Color de fondo global */
+    color: var(--text-color); /* Color de texto global */
+    min-height: 100vh;
+}
+
+:root {
+    /* Variables de color */
+    --background-color: #f7f5f2; /* Color crema suave */
+    --text-color: #333; /* Color de texto general */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Asegura que los enlaces hereden el color global */
+  }
+  
+  button {
+    font-family: inherit;
+    color: inherit;
+  }
+

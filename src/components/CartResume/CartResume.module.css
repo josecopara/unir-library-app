@@ -1,0 +1,101 @@
+/* src/components/CartResume.module.css */
+
+.cartResume {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Aumentar el padding para más espacio */
+    width: 300px; /* Aumentar el ancho del contenedor */
+    display: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999; /* Asegura que el dropdown esté por encima de otros elementos */
+  }
+  
+  .cartResume.open {
+    display: block;
+  }
+  
+  .cartList {
+    max-height: 350px; /* Aumentar la altura máxima para mostrar más contenido */
+    overflow-y: auto;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; /* Línea sólida entre los elementos */
+    align-items: flex-start;
+    margin-bottom: 15px; /* Aumentar el espacio entre los ítems */
+  }
+  
+  .bookDetails {
+    flex-grow: 1;
+  }
+  
+  .bookTitle {
+    font-weight: bold;
+    font-size: 16px; /* Aumentar el tamaño del título */
+    color: #333;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .bookInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px; /* Aumentar el espacio entre autor y precio */
+    font-size: 14px; /* Aumentar el tamaño de la fuente */
+    color: #555;
+  }
+  
+  .bookAuthor {
+    margin-right: 12px;
+  }
+  
+  .bookPrice {
+    color: #007bff;
+  }
+  
+  .garbageIcon {
+    width: 24px; /* Aumentar el tamaño del icono de basura */
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .emptyCart {
+    text-align: center;
+    color: #888;
+  }
+  
+  .totalPrice {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .checkoutButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Aumentar el espacio entre el total y el botón */
+  }
+  
+  .checkoutButton {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px; /* Aumentar el tamaño del botón */
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+  .checkoutButton:hover {
+    background-color: #333;
+  }
+  

@@ -1,0 +1,110 @@
+/* src/pages/Checkout/Checkout.module.css */
+
+.checkoutContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .pageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+  }
+  
+  .cartTitle {
+    font-size: 1.5rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cartList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .bookDetails {
+    flex-grow: 1; /* Esto hace que el contenedor de los detalles ocupe todo el espacio disponible */
+  }
+  
+  .bookTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+  }
+  
+  .bookAuthor,
+  .bookPrice {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .bookPrice {
+    font-weight: bold;
+    margin-left: 10px; /* Ajusta el margen para separar el precio del texto anterior */
+    text-align: right; /* Asegura que el precio se alinee a la derecha */
+    white-space: nowrap; /* Evita que el precio se rompa en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1; /* Esto hace que el precio ocupe el espacio restante */
+  }
+  
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .totalPrice {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .checkoutButton,
+  .goBackButton {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: small;
+  }
+  
+  .checkoutButton {
+    background-color: black;
+  }
+  
+  .checkoutButton:hover {
+    background-color: black;
+  }
+  
+  .goBackButton {
+    background-color: black;
+  }
+  
+  .goBackButton:hover {
+    background-color: black;
+  }
+  

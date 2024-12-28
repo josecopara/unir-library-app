@@ -1,0 +1,59 @@
+/* Estilos generales del header */
+.header {
+    background-color: #f5f5f5; /* Un color crema o suave */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Opcional: una línea para separar */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Centra el logo y empuja el carrito a la derecha */
+  }
+  
+  .logoContainer {
+    flex: 1; /* Opción para que el logo ocupe un espacio flexible */
+    text-align: center;
+  }
+  
+  .logo {
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .cartContainer {
+    position: relative;
+  }
+  
+  .cartLink {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .cartIcon {
+    height: 30px;
+  }
+  
+  .cartBubble {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4d4f; /* Rojo llamativo */
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cartButton {
+    background: none;
+    border: none; /* Eliminar el borde */
+    cursor: pointer;
+    position: relative;
+  }

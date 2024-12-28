@@ -1,0 +1,62 @@
+/* src/components/BookCard/BookCard.module.css */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  /* Asegura que el contenido esté distribuido */
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px;
+    height: 300px;  /* Altura fija para que todas las tarjetas sean consistentes */
+    width: 200px;  /* Ancho fijo */
+    cursor: pointer;  /* Cambiar el cursor al pasar sobre la tarjeta */
+    transition: transform 0.2s ease-in-out;  /* Efecto de transición */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);  /* Efecto de escala al hacer hover */
+  }
+  
+  .bookImage {
+    width: 120px;  /* Imagen más grande */
+    height: 180px;  /* Imagen más grande */
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* Limitar el título a 2 líneas en WebKit */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    /* Propiedad estándar sin prefijo para compatibilidad */
+    line-clamp: 2;
+    box-orient: vertical;
+  }
+  
+  .author {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .link {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,107 @@
+/* src/pages/MainPage/MainPage.module.css */
+
+.main {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .carouselWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel {
+    width: 80%; /* Carrusel con ancho adecuado */
+    margin: 10px;
+  }
+  
+  .slick-track {
+    display: flex !important; /* Asegura que los items no se solapen */
+    justify-content: center; /* Centra los elementos dentro del carrusel */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center; /* Centra cada tarjeta dentro del carrusel */
+    padding: 10px;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 1; /* Asegura que los controles no se tapen con los libros */
+  }
+  
+  .arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2rem; /* Tamaño adecuado para la flecha */
+    color: #fff; /* Color de la flecha blanca */
+    cursor: pointer;
+    z-index: 2;
+    transition: color 0.3s;
+    width: 50px; /* Ancho fijo para el círculo */
+    height: 50px; /* Alto fijo para el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Asegura que sea un círculo */
+    background-color: #000; /* Fondo negro */
+  }
+  
+  .arrowLeft {
+    left: 10px; /* Acercamos la flecha izquierda */
+  }
+  
+  .arrowRight {
+    right: 10px; /* Acercamos la flecha derecha */
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 2rem; /* Tamaño adecuado de la flecha dentro del círculo */
+    font-weight: bold;
+  }
+  
+  .arrowButton:hover {
+    color: #fff; /* Mantiene la flecha blanca al pasar el mouse */
+    background-color: #333; /* Fondo más oscuro cuando se pasa el mouse */
+  }
+  
+  .slick-dots {
+    bottom: 20px; /* Bajamos los puntos de navegación */
+  }
+  
+  .slick-dots li button {
+    background-color: #000; /* Color de fondo de los puntos */
+    opacity: 0.5;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #fff; /* Color de fondo cuando el punto está activo */
+    opacity: 1;
+  }
+  
+  .noResults {
+    color: #999;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

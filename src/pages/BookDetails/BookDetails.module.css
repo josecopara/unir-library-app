@@ -1,0 +1,56 @@
+/* src/pages/BookDetails/BookDetails.module.css */
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin-top: 15px;
+  }
+  
+  .bookImage {
+    max-width: 300px;
+    height: 360px;
+    margin-top: 20px;
+  }
+  
+  .bookTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .bookInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .bookInfo strong {
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 7px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    font-size: small;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
